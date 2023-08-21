@@ -45,10 +45,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <Image src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Adrian &nbsp;
-            <span className='sm:block hidden'> | JavaScript Mastery</span>
+          <Image src={logo} alt='logo' className='w-10 h-10 object-contain' />
+          <p className='text-white text-[29px] font-bold cursor-pointer flex relative right-2 '>
+            imanshu &nbsp;
+            <span className='sm:block hidden'> </span>
           </p>
         </Link>
 
@@ -67,7 +67,7 @@ const Navbar = () => {
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img
+          <Image
             src={toggle ? close : menu}
             alt='menu'
             className='w-[28px] h-[28px] object-contain'

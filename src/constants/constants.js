@@ -23,6 +23,9 @@ import {
     jobit,
     tripguide,
     threejs,
+    nextjs,
+    express,
+    java,
   } from "../assets";
   
   export const navLinks = [
@@ -32,7 +35,7 @@ import {
     },
     {
       id: "work",
-      title: "Work",
+      title: "Projects",
     },
     {
       id: "contact",
@@ -42,44 +45,44 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Frontend Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Backend Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Programmer",
       icon: backend,
     },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
+    // {
+    //   title: "Creator",
+    //   icon: creator,
+    // },
   ];
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "React JS",
+      icon: reactjs,
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: "Next JS",
+      icon: nextjs,
+    },
+    {
+      name: "Express JS",
+      icon: express,
     },
     {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
+    // {
+    //   name: "TypeScript",
+    //   icon: typescript,
+    // },
     {
       name: "Redux Toolkit",
       icon: redux,
@@ -105,13 +108,25 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "HTML 5",
+      icon: html,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "CSS 3",
+      icon: css,
     },
+    {
+      name: "Java",
+      icon: java,
+    },
+    // {
+    //   name: "figma",
+    //   icon: figma,
+    // },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
   ];
   
   const experiences = [
@@ -198,9 +213,21 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Hayasaka",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Orchestrated a dynamic full-stack music streaming web application with Next.js 13 and MongoDB.",
+        features: [
+          'User authentication using NextAuth.js with JWT and OAuth providers.',
+          'Redux to Manage app state effectively.',
+          'Play, pause, skip, and control the playback of songs.',
+          'Users can Create, update and delete their own playlists.',
+          'Add songs to favorites in one click.',
+          'Auto adds similar songs to the queue.',
+          'Swipe and touch gestures for touch-responsive devices.',
+          'Display song details such as title, artist, album, and album artwork.',
+          'PWA (Progressive Web App) support. '
+          ,
+        ],
       tags: [
         {
           name: "react",
@@ -214,14 +241,35 @@ import {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "nextjs",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "nextauth",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "redux",
+          color: "green-text-gradient",
+        }
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/himanshu8443/hayasaka",
+      live_link: "https://hayasaka.live/",
     },
     {
-      name: "Job IT",
+      name: "Study Notion",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Developed an educational technology website using React, Express, and MongoDB, offering enhanced learning experiences for users.",
+        features: [
+          'Implemented Email verification and using OTP user authentication and login/signup functionality using JWT for secure access to the platform.',
+          'Students can browse and purchase courses. Instructors can create new courses, edit existing courses, and delete courses they have created.',
+          'Integrated MongoDB database to store user information, course data, and progress tracking.',
+          'Employed RESTful API principles for seamless communication between the frontend and backend systems.',
+          'Razorpay payment integration.',
+          'PWA (Progressive Web App) support.',
+        ],
       tags: [
         {
           name: "react",
@@ -232,33 +280,25 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "ExpressJs",
           color: "pink-text-gradient",
         },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
         {
-          name: "nextjs",
+          name: "mongodb",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "tailwind",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "nodejs",
           color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
+        }
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: jobit,
+      source_code_link: "https://github.com/himanshu8443/Study-Notion-master",
+      live_link: "https://studynotion.fun/",
     },
   ];
   
