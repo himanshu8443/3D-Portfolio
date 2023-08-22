@@ -9,15 +9,17 @@ import {
   Works,
   StarsCanvas,
 } from "@/components";
-import SmoothScroll from "@/components/SmoothScroll";
+// import SmoothScroll from "@/components/SmoothScroll";
 
 export default function Home() {
   return (
     <div className="relative z-0 bg-primary">
-      <div className=" hero">
+      <div className=" relative">
         <Navbar />
         <Hero  />
+        <StarsCanvas />
       </div>
+      
       <About />
       {/* <Experience /> */}
       <Tech />
