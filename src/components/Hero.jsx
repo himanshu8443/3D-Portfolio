@@ -44,7 +44,7 @@ const Hero = () => {
       </div>
       
       
-      <Image src={heroImg} alt="hero" className="z-0 absolute bottom-0 right-0 animation transform translate-y-0 translate-x-0 scale-75" />
+      <Image src={heroImg} alt="hero" className="z-0 absolute bottom-0 right-0 animation" />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-30 cursor-pointer'>
         <a href='#about'>

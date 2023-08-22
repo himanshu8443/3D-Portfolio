@@ -17,7 +17,9 @@ export default function Home() {
       <div className=" relative">
         <Navbar />
         <Hero  />
+        <div className=" hidden">
         <StarsCanvas />
+        </div>
       </div>
       
       <About />
