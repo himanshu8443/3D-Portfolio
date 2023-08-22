@@ -2,14 +2,14 @@
 import { motion } from "framer-motion";
 
 import Image from "next/image";
-import heroImg from "../assets/header.svg"
+import heroImg from "../assets/user.svg"
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[190px] right-40 z-10  max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[190px] right-40 z-[-1] animation  max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -44,7 +44,7 @@ const Hero = () => {
       </div>
       
       
-      <Image src={heroImg} alt="hero" className="z-0 absolute bottom-0 right-0 animation" />
+      <Image src={heroImg} alt="hero" className="z-[-2] absolute bottom-0 right-0 animation" />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-30 cursor-pointer'>
         <a href='#about'>
