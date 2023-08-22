@@ -206,7 +206,7 @@
 }
 
 .hero{
-  background-image: url("/herobg.png");
+  background-image: url("/banner-bg.png");
   z-index: 100;
   background-size: cover;
   background-position: center;
@@ -231,4 +231,26 @@
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

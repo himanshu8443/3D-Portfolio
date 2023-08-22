@@ -14,10 +14,10 @@ import {
 export default function Home() {
   return (
     <div className="relative z-0 bg-primary">
-      <div className=" relative">
+      <div className=" relative hero">
         <Navbar />
         <Hero  />
-        <div className=" hidden">
+        <div className=" hidden lg:block ">
         <StarsCanvas />
         </div>
       </div>
