@@ -1,15 +1,14 @@
 import {
   About,
   Contact,
-  Experience,
-  Feedbacks,
+  // Experience,
+  // Feedbacks,
   Hero,
   Navbar,
   Tech,
   Works,
   StarsCanvas,
 } from "@/components";
-// import SmoothScroll from "@/components/SmoothScroll";
 
 export default function Home() {
   return (

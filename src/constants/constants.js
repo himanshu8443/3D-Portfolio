@@ -66,10 +66,12 @@ import {
     {
       name: "React JS",
       icon: reactjs,
+      position: [0, 0, 0]
     },
     {
       name: "Next JS",
       icon: nextjs,
+      position: [2, 0, 0]
     },
     {
       name: "Express JS",
@@ -99,10 +101,10 @@ import {
       name: "MongoDB",
       icon: mongodb,
     },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
+    // {
+    //   name: "Three JS",
+    //   icon: threejs,
+    // },
     {
       name: "git",
       icon: git,

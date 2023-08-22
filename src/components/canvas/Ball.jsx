@@ -1,10 +1,11 @@
 'use client'
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
+
 import {
   Decal,
-  Float,
   OrbitControls,
+  useResource,
   Preload,
   useTexture,
 } from "@react-three/drei";
@@ -15,17 +16,18 @@ const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
-    // <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-    //   <ambientLight intensity={0.25} />
-    //   <directionalLight position={[0, 0, 0.05]} />
+    <group className="animation">
+      // <ambientLight intensity={0.25} />
+      // <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
         <ambientLight intensity={0.25} />
         <directionalLight position={[0, 0, 0.05]} />
-        <icosahedronGeometry args={[1, 1]} />
-        <meshStandardMaterial
+        <icosahedronGeometry args={[1, 32]} />
+        <meshBasicMaterial
+        map={decal}
           color='#c9b1e3'
-          polygonOffset
-          polygonOffsetFactor={-5}
+          // polygonOffset
+          // polygonOffsetFactor={-5}
           flatShading
         />
         <Decal
@@ -35,8 +37,16 @@ const Ball = (props) => {
           map={decal}
           flatShading
         />
+        {/* opposite side decail */}
+        <Decal
+          position={[0, 0, -1]}
+          rotation={[0, Math.PI, -6.25]}
+          scale={1}
+          map={decal}
+          flatShading
+        />
       </mesh>
-    // </Float>
+      </group>
   );
 };
 

@@ -20,7 +20,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import nextjs from "./tech/nextjs.png";
+import nextjs from "./tech/nextjs.svg";
 import express from "./tech/express.png";
 import java from "./tech/java.png";
 

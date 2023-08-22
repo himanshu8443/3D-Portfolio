@@ -9,6 +9,8 @@ import { projects } from "../constants/constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { HiLink } from "react-icons/hi";
 import { ImGithub } from "react-icons/im";
+import Image from "next/image";
+import color_sharp from "../assets/color_sharp.png";
 
 const ProjectCard = ({
   index,
@@ -83,6 +85,7 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
+    < div className='relative'>
       <motion.div variants={textVariant()}>
         <p id="work" className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -99,6 +102,8 @@ const Works = () => {
           ability to solve complex problems, work with different technologies,
           and manage projects effectively.
         </motion.p>
+        <Image src={color_sharp} alt="color-sharp" className="absolute z-[-1] h-80 -left-60 w-screen -top-20" />
+        </div>
       </div>
 
       <div className='mt-20 flex flex-col gap-7'>
