@@ -7,7 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative z-[-1] w-full h-screen mx-auto banner`}>
       <div
         className={`absolute inset-0 top-[190px] right-40 z-[-1] animation  max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5`}
       >

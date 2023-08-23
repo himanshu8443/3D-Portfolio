@@ -23,22 +23,25 @@ export default function Home() {
     )()
   }, [])
   return (
-    <div className="relative z-0 bg-primary">
-      <div className=" relative hero">
+    <div className="  ">
         <Navbar />
         <Hero  />
-        <StarsCanvas />
-      </div>
+        <div className="bg-primary relative z-[1] h-full ">
+        <div className=" relative z-[1]">
 
       <About />
       {/* <Experience /> */}
-      {/* <Tech /> */}
+      <div className=" overflow-hidden">
+      <Tech />
+
+      </div>
       <Works />
       {/* <Feedbacks /> */}
-      <div className="relative z-0">
         <Contact />
+        </div>
         <StarsCanvas />
-      </div>
+        </div>
+
     </div>
   );
 }

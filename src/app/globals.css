@@ -204,14 +204,15 @@
   }
 }
 
-.hero{
+
+.banner{
   background-image: url("/banner-bg.png");
-  z-index: 100;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-blend-mode: lighten;
+  background-color: #050816;
   height: 100vh;
-  width: 100%;
 }
 
 

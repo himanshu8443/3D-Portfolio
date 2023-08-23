@@ -24,7 +24,7 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className='bg-tertiary p-5 rounded-2xl gap-4'>
+      <div className='bg-tertiary bg-opacity-70 p-5 rounded-2xl gap-4'>
       <h3 className='text-white font-bold text-[28px] flex gap-2 items-center my-2 '>{name}<HiLink size={15}/></h3>
       <div className='lg:flex gap-10 lg:flex-row lg:justify-between lg:items-center'>
       <Tilt className=' lg:w-[90%] lg:h-[90%] w-full h-full'
