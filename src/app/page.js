@@ -1,3 +1,4 @@
+'use client';
 import {
   About,
   Contact,
@@ -9,18 +10,26 @@ import {
   Works,
   StarsCanvas,
 } from "@/components";
+import { useEffect } from "react";
+
 
 export default function Home() {
+  useEffect(() => {
+    (
+      async () => {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default
+        const scroll = new LocomotiveScroll();
+      }
+    )()
+  }, [])
   return (
     <div className="relative z-0 bg-primary">
       <div className=" relative hero">
         <Navbar />
         <Hero  />
-        <div className=" hidden lg:block ">
         <StarsCanvas />
-        </div>
       </div>
-      
+
       <About />
       {/* <Experience /> */}
       {/* <Tech /> */}

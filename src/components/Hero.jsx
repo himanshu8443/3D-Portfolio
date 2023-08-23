@@ -16,7 +16,7 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
-        <div>
+        <div data-scroll data-scroll-speed='1'>
           <h1 className={`font-black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-20 text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>Himanshu</span><br/>
             <span className='text-white text-4xl md:text-6xl'>

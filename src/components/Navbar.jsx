@@ -61,7 +61,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a data-scroll-to href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
@@ -91,7 +91,7 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a data-scroll-to href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
             </ul>

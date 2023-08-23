@@ -9,7 +9,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
   color-scheme: dark;
   -webkit-tap-highlight-color: transparent;
 }
@@ -253,4 +252,21 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.border_animation:hover {
+  padding: 12px;
+  animation: border_animation 1s ;
+}
+
+@keyframes border_animation {
+  0% {
+    padding: 12px;
+  }
+  50% {
+    padding: 4px;
+  }
+  100% {
+    padding: 12px;
+  }
 }
