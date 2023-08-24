@@ -21,7 +21,7 @@ function Skills({ name, icon, index}) {
   };
   const { x, y } = position;
   return (
-    <motion.div variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("right", "spring", index * 0.2, 0.75)}>
       <motion.div ref={ref} onMouseMove={onMouseMove} onMouseLeave={onMouseLeave} animate={{x,y}}
       transition={{type:'spring',
       stiffness: 190,
