@@ -1,3 +1,8 @@
+## Interactive 3D Animated Portfolio
+
+![image](https://github.com/himanshu8443/3D-Portfolio/assets/99420590/a4ac2fbe-7f4b-4909-b0b1-0ea2234a6cc0)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
