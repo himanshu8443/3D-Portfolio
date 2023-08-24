@@ -2,7 +2,7 @@
 ## Interactive 3D Animated Portfolio
 ---
 
-![image](https://github.com/himanshu8443/3D-Portfolio/assets/99420590/a4ac2fbe-7f4b-4909-b0b1-0ea2234a6cc0)
+![image](https://github.com/himanshu8443/3D-Portfolio/assets/99420590/4f1e6b2d-ce4e-45a7-912e-835bbe9793fb)
 ---
 
 
