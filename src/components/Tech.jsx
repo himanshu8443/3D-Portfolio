@@ -34,7 +34,6 @@ const Tech = () => {
             playsInline
             loop
             muted
-            // @ts-ignore
             autoPlay="autoplay"
             src="/cards-video.webm"
           ></video>

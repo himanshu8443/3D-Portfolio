@@ -22,6 +22,21 @@ const ProjectCard = ({
   features,
   live_link,
 }) => {
+  const ref = React.useRef(null);
+  const  [position, setPosition] = React.useState({ x: 0, y: 0 });
+
+  const onMouseMove = (e)=>{
+    const { clientX, clientY } = e;
+    const  { width, height,  left, top } = ref.current.getBoundingClientRect();
+    const x = clientX - (left + width / 2);
+    const y = clientY - (top + height / 2);
+    setPosition({ x, y });
+  }
+
+  const onMouseLeave = () => {
+    setPosition({ x: 0, y: 0 });
+  };
+  const { x, y } = position;
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <div className='bg-tertiary bg-opacity-70 p-5 rounded-2xl gap-4'>
@@ -30,11 +45,16 @@ const ProjectCard = ({
       <Tilt className=' lg:w-[90%] lg:h-[90%] w-full h-full'
         options={{
           max: 20,
-          scale: 1,
-          speed: 200,
+          // scale: 1,
+          speed: 100,
+          glare: true,
+          "max-glare": 0.5,
+          transition: true,
+          perspective: 1000,
+          easing: "cubic-bezier(.03,.98,.52,.99)",
         }}
       >
-        <div className='relative cursor-pointer flex justify-between'>
+        <div className='relative cursor-pointer flex justify-between transition-all duration-500'>
           <img
             src={image.src}
             alt='project_image'
@@ -42,17 +62,33 @@ const ProjectCard = ({
           />
         </div>
         </Tilt>
-        <div onClick={() => window.open(live_link, "_blank")} className='flex sm:flex lg:flex-col gap-8 mt-3'>
-        <button className=" text-gradient lg:w-[10%] flex justify-center">
-          <p className="text-white font-semibold text-sm lg:text-[24px] hover:scale-105 transition-all duration-200 flex gap-2 items-center p-3 border-2 rounded-full border-secondary ">
-          <HiLink size={30} className=" text-[#915EFF]"/>
+        <div  className='flex sm:flex lg:flex-col gap-8 mt-3'>
+        <motion.div ref={ref} onMouseMove={onMouseMove} onMouseLeave={onMouseLeave} animate={{ x, y }}
+                transition={{
+                  type: 'spring',
+                  stiffness: 130,
+                  damping: 50,
+                  mass: 0.1,
+                }}>
+        <button onClick={() => window.open(live_link, "_blank")} className=" text-gradient lg:w-[10%] flex justify-center">
+          <p className=" font-semibold text-sm lg:text-[24px] hover:scale-105 transition-all duration-200 flex gap-2 items-center p-3 border-2 rounded-full border-secondary text-[#915EFF] ">
+          <HiLink size={30} className=" "/>
           </p>
           </button>
+          </motion.div>
+              <motion.div ref={ref} onMouseMove={onMouseMove} onMouseLeave={onMouseLeave} animate={{ x, y }}
+                transition={{
+                  type: 'spring',
+                  stiffness: 130,
+                  damping: 50,
+                  mass: 0.1,
+                }}>
           <button onClick={() => window.open(source_code_link, "_blank")} className=" text-gradient lg:w-[10%] flex justify-center">
           <p className="text-white font-semibold text-sm lg:text-[24px] hover:scale-105 transition-all duration-200 flex gap-2 items-center p-3 border-2 rounded-full border-secondary hover:bg-black ">
           <ImGithub size={30} className=" text-[#915EFF]"/>
           </p>
           </button>
+          </motion.div>
           </div>
         </div>
 

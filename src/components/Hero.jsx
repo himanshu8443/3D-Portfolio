@@ -62,8 +62,8 @@ const Hero = () => {
       </div>
       <div className="sliderContainer md:z-[-10]">
         <div ref={slider} className="slider overflow-hidden text-secondary text-[70px] lg:text-[200px]">
-          <p ref={firstText} >Full-Stack Developer</p>
-          <p ref={secondText}>Full-Stack Developer</p>
+          <p ref={firstText} >Full-Stack Developer.</p>
+          <p ref={secondText}>Full-Stack Developer.</p>
         </div>
       </div> 
       
