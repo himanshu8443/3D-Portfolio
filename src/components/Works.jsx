@@ -22,21 +22,33 @@ const ProjectCard = ({
   features,
   live_link,
 }) => {
-  const ref = React.useRef(null);
-  const  [position, setPosition] = React.useState({ x: 0, y: 0 });
+  const refLiveLink = React.useRef(null);
+const refSourceCodeLink = React.useRef(null);
+const [positionLiveLink, setPositionLiveLink] = React.useState({ x: 0, y: 0 });
+const [positionSourceCodeLink, setPositionSourceCodeLink] = React.useState({ x: 0, y: 0 });
 
-  const onMouseMove = (e)=>{
+  const onMouseMoveLiveLink = (e) => {
     const { clientX, clientY } = e;
-    const  { width, height,  left, top } = ref.current.getBoundingClientRect();
+    const { width, height, left, top } = refLiveLink.current.getBoundingClientRect();
     const x = clientX - (left + width / 2);
     const y = clientY - (top + height / 2);
-    setPosition({ x, y });
-  }
-
-  const onMouseLeave = () => {
-    setPosition({ x: 0, y: 0 });
+    setPositionLiveLink({ x, y });
   };
-  const { x, y } = position;
+  
+  const onMouseMoveSourceCodeLink = (e) => {
+    const { clientX, clientY } = e;
+    const { width, height, left, top } = refSourceCodeLink.current.getBoundingClientRect();
+    const x = clientX - (left + width / 2);
+    const y = clientY - (top + height / 2);
+    setPositionSourceCodeLink({ x, y });
+  };
+  
+  const onMouseLeave = () => {
+    setPositionLiveLink({ x: 0, y: 0 });
+    setPositionSourceCodeLink({ x: 0, y: 0 });
+  };
+
+  
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <div className='bg-tertiary bg-opacity-70 p-5 rounded-2xl gap-4'>
@@ -45,7 +57,7 @@ const ProjectCard = ({
       <Tilt className=' lg:w-[90%] lg:h-[90%] w-full h-full'
         options={{
           max: 20,
-          // scale: 1,
+          scale: 1,
           speed: 100,
           glare: true,
           "max-glare": 0.5,
@@ -63,7 +75,8 @@ const ProjectCard = ({
         </div>
         </Tilt>
         <div  className='flex sm:flex lg:flex-col gap-8 mt-3'>
-        <motion.div ref={ref} onMouseMove={onMouseMove} onMouseLeave={onMouseLeave} animate={{ x, y }}
+        <motion.div ref={refLiveLink} onMouseMove={onMouseMoveLiveLink} onMouseLeave={onMouseLeave}
+                animate={{ x: positionLiveLink.x, y: positionLiveLink.y }}
                 transition={{
                   type: 'spring',
                   stiffness: 130,
@@ -76,7 +89,8 @@ const ProjectCard = ({
           </p>
           </button>
           </motion.div>
-              <motion.div ref={ref} onMouseMove={onMouseMove} onMouseLeave={onMouseLeave} animate={{ x, y }}
+              <motion.div ref={refSourceCodeLink} onMouseMove={onMouseMoveSourceCodeLink} onMouseLeave={onMouseLeave}
+              animate={{ x: positionSourceCodeLink.x, y: positionSourceCodeLink.y }}
                 transition={{
                   type: 'spring',
                   stiffness: 130,
