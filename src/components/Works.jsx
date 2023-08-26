@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -55,16 +55,7 @@ const [positionSourceCodeLink, setPositionSourceCodeLink] = React.useState({ x: 
       <h3 className='text-white font-bold text-[28px] flex gap-2 items-center my-2 '>{name}<HiLink size={15}/></h3>
       <div className='lg:flex gap-10 lg:flex-row lg:justify-between lg:items-center'>
       <Tilt className=' lg:w-[90%] lg:h-[90%] w-full h-full'
-        options={{
-          max: 20,
-          scale: 1,
-          speed: 100,
-          glare: true,
-          "max-glare": 0.5,
-          transition: true,
-          perspective: 1000,
-          easing: "cubic-bezier(.03,.98,.52,.99)",
-        }}
+        
       >
         <div className='relative cursor-pointer flex justify-between transition-all duration-500'>
           <img

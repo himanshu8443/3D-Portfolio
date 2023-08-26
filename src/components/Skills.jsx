@@ -36,7 +36,7 @@ function Skills({ name, icon, index}) {
           width={100}
           height={100}
           src={icon.src}
-          className=" w-24 cursor-pointer"
+          className="  cursor-pointer"
         />
       </div>
       </motion.div>

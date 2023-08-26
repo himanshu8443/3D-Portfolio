@@ -26,6 +26,8 @@ import {
     nextjs,
     express,
     java,
+    jwt,
+    nextauth,
   } from "../assets";
   
   export const navLinks = [
@@ -120,6 +122,14 @@ import {
     {
       name: "Java",
       icon: java,
+    },
+    {
+      name: "JWT",
+      icon: jwt,
+    },
+    {
+      name: "NextAuth",
+      icon: nextauth,
     },
     // {
     //   name: "figma",

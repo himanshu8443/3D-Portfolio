@@ -23,6 +23,8 @@ import threejs from "./tech/threejs.svg";
 import nextjs from "./tech/nextjs.svg";
 import express from "./tech/express.png";
 import java from "./tech/java.png";
+import jwt from "./tech/jwt.svg";
+import nextauth from "./tech/nextauth.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -65,4 +67,6 @@ export {
   nextjs,
   express,
   java,
+  jwt,
+  nextauth,
 };
