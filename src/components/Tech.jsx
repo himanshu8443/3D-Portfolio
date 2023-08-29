@@ -20,21 +20,21 @@ const Tech = () => {
       <Image src={color_sharp} alt="color-sharp" className="absolute z-[-1] h-80 -left-60 w-screen -top-20" />
       </div>
     <div className='flex relative z-10 flex-col flex-wrap justify-center gap-10'>
-      <div className=" flex gap-10 justify-center">
+      <div className=" flex flex-wrap gap-10 justify-center">
       {technologies.slice(0,7).map((technology,index) => (
         <div className='w-28 h-28 mt-5' key={technology.name}>
           <Skills name={technology.name} icon={technology.icon} index={index} />
         </div>
       ))}
       </div>
-      <div className=" flex gap-10 justify-center">
+      <div className=" flex flex-wrap gap-10 justify-center">
       {technologies.slice(7,12).map((technology,index) => (
         <div className='w-28 h-28 mt-5' key={technology.name}>
           <Skills name={technology.name} icon={technology.icon} index={index} />
         </div>
       ))}
       </div>
-      <div className=" flex gap-10 justify-center">
+      <div className=" flex flex-wrap gap-10 justify-center">
       {technologies.slice(12).map((technology,index) => (
         <div className='w-24 h-24 mt-5' key={technology.name}>
           <Skills name={technology.name} icon={technology.icon} index={index} />
