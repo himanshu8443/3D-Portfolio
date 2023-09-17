@@ -1,4 +1,3 @@
-'use client';
 import {
   About,
   Contact,
@@ -8,40 +7,28 @@ import {
   Navbar,
   Tech,
   Works,
-  StarsCanvas,
 } from "@/components";
-import { useEffect } from "react";
-
+import dynamic from "next/dynamic";
 
 export default function Home() {
-  useEffect(() => {
-    (
-      async () => {
-        const LocomotiveScroll = (await import('locomotive-scroll')).default
-        const scroll = new LocomotiveScroll();
-      }
-    )()
-  }, [])
+  const StarsCanvas = dynamic(() => import("@/components/canvas/Stars"));
   return (
     <div className="  ">
-        <Navbar />
-        <Hero  />
-        <div className="bg-primary relative z-[1] h-full ">
+      <Navbar />
+      <Hero />
+      <div className="bg-primary relative z-[1] h-full ">
         <div className=" relative z-[1]">
-
-      <About />
-      {/* <Experience /> */}
-      <div className=" overflow-hidden">
-      <Tech />
-
-      </div>
-      <Works />
-      {/* <Feedbacks /> */}
-        <Contact />
+          <About />
+          {/* <Experience /> */}
+          <div className=" overflow-hidden">
+            <Tech />
+          </div>
+          <Works />
+          {/* <Feedbacks /> */}
+          <Contact />
         </div>
         <StarsCanvas />
-        </div>
-
+      </div>
     </div>
   );
 }

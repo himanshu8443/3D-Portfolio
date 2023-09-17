@@ -31,14 +31,14 @@ const Hero = () => {
   }, []);
 
   const animate = () => {
-    if(xPercent < -100){
+    if (xPercent < -100) {
       xPercent = 0;
     }
-    else if(xPercent > 0){
+    else if (xPercent > 0) {
       xPercent = -100;
     }
-    gsap.set(firstText.current, {xPercent: xPercent})
-    gsap.set(secondText.current, {xPercent: xPercent})
+    gsap.set(firstText.current, { xPercent: xPercent })
+    gsap.set(secondText.current, { xPercent: xPercent })
     requestAnimationFrame(animate);
     xPercent += 0.1 * direction;
   }
@@ -55,9 +55,9 @@ const Hero = () => {
 
         <div data-scroll data-scroll-speed='0.4'>
           <h1 className={`font-black lg:text-[90px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-20 text-white`}>
-            Hi, I'm <p className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-[60px] lg:text-[110px]'>Himanshu</p>        
+            Hi, I'm <p className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-[60px] lg:text-[110px]'>Himanshu</p>
           </h1>
-         
+
         </div>
       </div>
       <div className="sliderContainer md:z-[-10]">
@@ -65,10 +65,10 @@ const Hero = () => {
           <p ref={firstText} >Full-Stack Developer.</p>
           <p ref={secondText}>Full-Stack Developer.</p>
         </div>
-      </div> 
-      
-      
-      <Image src={heroImg} alt="hero" className="z-[-2] absolute bottom-24 right-0 animation" />
+      </div>
+
+
+      <Image loading="lazy" src={heroImg} alt="hero" className="z-[-2] absolute bottom-24 right-0 animation" />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-30 cursor-pointer'>
         <a href='#about'>
