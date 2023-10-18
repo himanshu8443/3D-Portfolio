@@ -33,7 +33,6 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import inkSync from "./ink.png";
 
 export {
@@ -64,7 +63,6 @@ export {
   tesla,
   carrent,
   jobit,
-  tripguide,
   inkSync,
   nextjs,
   express,

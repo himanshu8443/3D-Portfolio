@@ -1,13 +1,4 @@
-import {
-  About,
-  Contact,
-  // Experience,
-  // Feedbacks,
-  Hero,
-  Navbar,
-  Tech,
-  Works,
-} from "@/components";
+import { About, Contact, Hero, Navbar, Tech, Works } from "@/components";
 import dynamic from "next/dynamic";
 
 export default function Home() {
@@ -19,12 +10,10 @@ export default function Home() {
       <div className="bg-primary relative z-[1] h-full ">
         <div className=" relative z-[1]">
           <About />
-          {/* <Experience /> */}
           <div className=" overflow-hidden">
             <Tech />
           </div>
           <Works />
-          {/* <Feedbacks /> */}
           <Contact />
         </div>
         <StarsCanvas />
