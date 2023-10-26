@@ -34,6 +34,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import inkSync from "./ink.png";
+import tracker from "./tracker.png";
 
 export {
   logo,
@@ -64,6 +65,7 @@ export {
   carrent,
   jobit,
   inkSync,
+  tracker,
   nextjs,
   express,
   java,

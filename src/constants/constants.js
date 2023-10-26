@@ -17,6 +17,7 @@ import {
   carrent,
   jobit,
   inkSync,
+  tracker,
   threejs,
   nextjs,
   express,
@@ -138,6 +139,33 @@ const technologies = [
 
 const projects = [
   {
+    name: "FlipKart Price Tracker",
+    description:
+      "Chrome extension to track FlipKart product prices and send an alert to users when prices go below the user-selected price.",
+    features: [
+      "Users can add products to the watchlist by clicking on the extension icon on the product page.",
+      "Users can set a price alert by entering the desired price for the product.",
+    ],
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Chrome Extension",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ReactJs",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tracker,
+    source_code_link: "https://github.com/himanshu8443/FlipKart-Price-Tracker",
+    live_link:
+      "https://chromewebstore.google.com/detail/fliptrack-flipkart-price/pekpfcghlbljghaojdlajgpceebobokd?hl=en",
+  },
+  {
     name: "InkSync",
     description:
       "A real-time collaborative whiteboard web application built with NextJs, Express, and Socket.io.",
@@ -174,7 +202,7 @@ const projects = [
   {
     name: "Hayasaka",
     description:
-      "Orchestrated a dynamic full-stack music streaming web application with Next.js 13 and MongoDB.",
+      "A dynamic full-stack music streaming web application with Next.js 13 and MongoDB.",
     features: [
       "User authentication using NextAuth.js with JWT and OAuth providers.",
       "Redux to Manage app state effectively.",
@@ -218,8 +246,7 @@ const projects = [
   },
   {
     name: "Study Notion",
-    description:
-      "Developed an educational technology website using React, Express, and MongoDB, offering enhanced learning experiences for users.",
+    description: "Developed an educational technology website with CMS.",
     features: [
       "Implemented Email verification and using OTP user authentication and login/signup functionality using JWT for secure access to the platform.",
       "Students can browse and purchase courses. Instructors can create new courses, edit existing courses, and delete courses they have created.",
