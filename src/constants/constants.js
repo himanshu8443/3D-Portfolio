@@ -123,10 +123,10 @@ const technologies = [
     name: "JWT",
     icon: jwt,
   },
-  {
-    name: "NextAuth",
-    icon: nextauth,
-  },
+  // {
+  //   name: "NextAuth",
+  //   icon: nextauth,
+  // },
   // {
   //   name: "figma",
   //   icon: figma,
@@ -138,33 +138,6 @@ const technologies = [
 ];
 
 const projects = [
-  {
-    name: "FlipKart Price Tracker",
-    description:
-      "Chrome extension to track FlipKart product prices and send an alert to users when prices go below the user-selected price.",
-    features: [
-      "Users can add products to the watchlist by clicking on the extension icon on the product page.",
-      "Users can set a price alert by entering the desired price for the product.",
-    ],
-    tags: [
-      {
-        name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Chrome Extension",
-        color: "green-text-gradient",
-      },
-      {
-        name: "ReactJs",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tracker,
-    source_code_link: "https://github.com/himanshu8443/FlipKart-Price-Tracker",
-    live_link:
-      "https://chromewebstore.google.com/detail/fliptrack-flipkart-price/pekpfcghlbljghaojdlajgpceebobokd?hl=en",
-  },
   {
     name: "InkSync",
     description:
@@ -284,6 +257,33 @@ const projects = [
     image: jobit,
     source_code_link: "https://github.com/himanshu8443/Study-Notion-master",
     live_link: "https://studynotion.fun/",
+  },
+  {
+    name: "FlipKart Price Tracker",
+    description:
+      "Chrome extension to track FlipKart product prices and send an alert to users when prices go below the user-selected price.",
+    features: [
+      "Users can add products to the watchlist by clicking on the extension icon on the product page.",
+      "Users can set a price alert by entering the desired price for the product.",
+    ],
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Chrome Extension",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ReactJs",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tracker,
+    source_code_link: "https://github.com/himanshu8443/FlipKart-Price-Tracker",
+    live_link:
+      "https://chromewebstore.google.com/detail/fliptrack-flipkart-price/pekpfcghlbljghaojdlajgpceebobokd?hl=en",
   },
 ];
 
