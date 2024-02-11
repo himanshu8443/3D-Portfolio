@@ -24,6 +24,7 @@ import {
   java,
   jwt,
   nextauth,
+  socialSphere,
 } from "../assets";
 
 export const navLinks = [
@@ -284,6 +285,44 @@ const projects = [
     source_code_link: "https://github.com/himanshu8443/FlipKart-Price-Tracker",
     live_link:
       "https://chromewebstore.google.com/detail/fliptrack-flipkart-price/pekpfcghlbljghaojdlajgpceebobokd?hl=en",
+  },
+  {
+    name: "Social Sphere",
+    description:
+      "A full-stack social media application with user authentication, infinite scroll, and image and video uploads.",
+    features: [
+      "User authentication using JWT and OAuth providers.",
+      "Infinite scroll for posts.",
+      "Image and video uploads.",
+      "Like, comment, and share posts.",
+      "Follow and unfollow users.",
+      "Dark mode support.",
+    ],
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Supabase",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: socialSphere,
+    source_code_link: "https://github.com/himanshu8443/SocialSphere",
+    live_link: "https://socialspherex.vercel.app/",
   },
 ];
 

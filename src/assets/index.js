@@ -35,6 +35,7 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import inkSync from "./ink.png";
 import tracker from "./tracker.png";
+import socialSphere from "./socialSphere.png";
 
 export {
   logo,
@@ -66,6 +67,7 @@ export {
   jobit,
   inkSync,
   tracker,
+  socialSphere,
   nextjs,
   express,
   java,
