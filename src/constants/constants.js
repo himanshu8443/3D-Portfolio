@@ -257,7 +257,7 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/himanshu8443/Study-Notion-master",
-    live_link: "https://studynotion.fun/",
+    live_link: "https://studynotion-master.vercel.app/",
   },
   {
     name: "FlipKart Price Tracker",
